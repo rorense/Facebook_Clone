@@ -1,7 +1,9 @@
+/* Targetting the facebook logo on the left */
 .header_left > img {
     height: 40px;
 }
 
+/* The whole header object */
 .header {
     display: flex;
     padding: 15px 20px;
@@ -13,10 +15,74 @@
     box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 0.75);
 }
 
+/* Only the left side of the header component */
 .header_left {
     display: flex;
 }
 
+/* Targeting only the search icon and the search bar */
 .header_input {
-    
+    display: flex;
+    align-items: center;
+    background-color: #eff2f5;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 999px;
+}
+
+/* Trageting the actual search bar input */
+.header_input > input {
+    border: none;
+    background-color: transparent;
+    outline-width: 0;
+}
+
+/* Just the middle header section */
+.header_middle {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+/* Targeting the middle header sections SVG icons */
+.header_option > .MuiSvgIcon-root {
+    color: grey;
+}
+
+/* Changes color on hover */
+.header_option:hover > .MuiSvgIcon-root {
+    color: #2e81f4;
+}
+
+/* Spacing out the middle icons */
+.header_option {
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    cursor: pointer;
+}
+
+/* On hover, adding styling on the element surrounding the icons */
+.header_option:hover {
+    background-color: #eff2f5;
+    border-radius: 10px;
+    align-items: center;
+    padding: 0 30px;
+    border-bottom: none;
+}
+
+/* Targeting the avatar photo and the text */
+.header_info {
+    display: flex;
+    align-items: center;
+}
+
+/* Targetting avatar text */
+.header_info > h4 {
+    margin-left: 10px;
+}
+
+/* The right header component */
+.header_right {
+    display: flex;
 }
