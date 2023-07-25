@@ -1,9 +1,9 @@
 /* Targetting the facebook logo on the left */
-.header_left > img {
+.header__left > img {
     height: 40px;
 }
 
-/* The whole header object */
+/* The whole header_ object */
 .header {
     display: flex;
     padding: 15px 20px;
@@ -15,13 +15,13 @@
     box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 0.75);
 }
 
-/* Only the left side of the header component */
-.header_left {
+/* Only the left side of the header_ component */
+.header__left {
     display: flex;
 }
 
 /* Targeting only the search icon and the search bar */
-.header_input {
+.header__input {
     display: flex;
     align-items: center;
     background-color: #eff2f5;
@@ -31,31 +31,41 @@
 }
 
 /* Trageting the actual search bar input */
-.header_input > input {
+.header__input > input {
     border: none;
     background-color: transparent;
     outline-width: 0;
 }
 
-/* Just the middle header section */
-.header_middle {
+/* Just the middle header_ section */
+.header__middle {
     display: flex;
     flex: 1;
     justify-content: center;
 }
 
-/* Targeting the middle header sections SVG icons */
-.header_option > .MuiSvgIcon-root {
+/* Targeting the middle header_ sections SVG icons */
+.header__option > .MuiSvgIcon-root {
     color: grey;
 }
 
 /* Changes color on hover */
-.header_option:hover > .MuiSvgIcon-root {
+.header__option:hover > .MuiSvgIcon-root {
     color: #2e81f4;
 }
 
+/* Targetting active home icon */
+.header__option--active > .MuiSvgIcon-root {
+    color: #2e81f4;
+}
+
+/* Targetting active home icon */
+.header__option--active {
+    border-bottom: 4px solid #2e81f4;
+}
+
 /* Spacing out the middle icons */
-.header_option {
+.header__option {
     display: flex;
     align-items: center;
     padding: 0 30px;
@@ -63,7 +73,7 @@
 }
 
 /* On hover, adding styling on the element surrounding the icons */
-.header_option:hover {
+.header__option:hover {
     background-color: #eff2f5;
     border-radius: 10px;
     align-items: center;
@@ -72,17 +82,17 @@
 }
 
 /* Targeting the avatar photo and the text */
-.header_info {
+.header__info {
     display: flex;
     align-items: center;
 }
 
 /* Targetting avatar text */
-.header_info > h4 {
+.header__info > h4 {
     margin-left: 10px;
 }
 
-/* The right header component */
-.header_right {
+/* The right header_ component */
+.header__right {
     display: flex;
 }
