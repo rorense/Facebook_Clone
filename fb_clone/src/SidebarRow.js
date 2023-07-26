@@ -1,10 +1,17 @@
+// "rfce" for template
 import React from 'react'
 import './SidebarRow.css';
+import { Avatar } from '@mui/material';
 
-function SidebarRow() {
+// Prop elements lets you pass on variables to components
+function SidebarRow({ src, Icon, title }) {
   return (
     <div className='sidebarRow'>
-        I am a row
+        {/* && symbol indicates an "if" statement
+        If src or Icon exists then display*/}
+        { src && <Avatar src={src}/> }
+        { Icon && <Icon />}
+        <h4>{ title }</h4>
     </div>
   )
 }

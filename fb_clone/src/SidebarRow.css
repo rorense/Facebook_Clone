@@ -1,0 +1,25 @@
+/* CSS for the sidebar element */
+.sidebarRow {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Sidebar on hover */
+.sidebarRow:hover {
+    background-color: lightgrey;
+    border-radius: 10px;
+}
+
+/* targetting the h4 text tag within sidebar */
+.sidebarRow > h4 {
+    margin-left: 20px;
+    font-weight: 600;
+}
+
+/* Targetting the icon element within the sidebar */
+.sidebarRow > .MuiSvgIcon-root {
+    font-size: xx-large;
+    color: #2e81f4;
+}
