@@ -1,0 +1,10 @@
+.app {
+    background-color: #f1f2f5;
+    height: 100vh;
+}
+
+/* Making it so that the 3 middle sections are next to each other */
+.app__body {
+    display: flex;
+}
+
