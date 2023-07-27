@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./Post.css";
 import { Avatar } from '@mui/material';
 // Importing Icons from Material UI
@@ -9,9 +9,19 @@ import InsertEmoticonIcon from '@mui/icons-material/InsertEmoticon';
 
 function Post() {
 
+    // State hooks for input on the post input
+    const [input, setInput] = useState("");
+    const [imageUrl, setImageUrl] = useState("")
+
     const handleSubmit = e => {
         // Prevents refreshing
         e.preventDefault();
+
+        // Implement database
+
+        // Clears the field when user submits.
+        setInput("");
+        setImageUrl("");
     }
 
   return (
@@ -19,8 +29,16 @@ function Post() {
         <div className='post__top'>
             <Avatar src="" />
             <form>
-                <input className="post__input" placeholder="What's on your mind?"/>
-                <input placeholder='Image URL (Optional)'/>
+                <input 
+                // adding state hook
+                value={input}
+                onChange={(e) => setInput(e.target.value)}
+                className="post__input" placeholder="What's on your mind?"/>
+                <input 
+                // adding state hook
+                value={imageUrl}
+                onChange={(e) => setImageUrl(e.target.value)}
+                placeholder='Image URL (Optional)'/>
                 <button onClick={handleSubmit} type='submit'>
                     Hidden Submit
                 </button>

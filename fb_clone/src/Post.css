@@ -49,6 +49,7 @@ The user can press "enter" to submit the post */
     justify-content: center;
 }
 
+/* Targetting each of the icon options */
 .post__option {
     padding: 20px;
     display: flex;
@@ -56,3 +57,17 @@ The user can press "enter" to submit the post */
     color: gray;
     margin: 5px;
 }
+
+/* Adding a hover effect */
+.post__option:hover {
+    background-color: #eff2f5;
+    border-radius: 20px;
+}
+
+/* Target the option */
+.post__option > h3 {
+    font-size: medium;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
