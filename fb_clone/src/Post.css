@@ -1,0 +1,58 @@
+/* Targetting the whole post section */
+.post {
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 5px 7px -7px rgba(0, 0, 0, 0.75);
+    width: 100%;
+}
+
+/* Targetting just the top part of the post section */
+.post__top {
+    display: flex;
+    border-bottom: 1px solid #eff2f5;
+    padding: 15px;
+}
+
+/* Tragetting the the text box forms */
+.post__top > form {
+    flex: 1;
+    display: flex;
+}
+
+/* For the actual input themselves */
+.post__top > form > input {
+    outline-width: 0;
+    border: none;
+    padding: 5px 20px;
+    margin: 0 10px;
+    border-radius: 999px;
+    background-color: #eff2f5;
+}
+
+/* By hiding the button, it will keep the functionality of a submit
+The user can press "enter" to submit the post */
+.post__top > form > button {
+    display: none;
+}
+
+/* Allows the input div to grow with the window */
+.post__input {
+    flex: 1;
+}
+
+/* Targetting the bottom part of the post component */
+.post__bottom {
+    display: flex;
+    justify-content: center;
+}
+
+.post__option {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    color: gray;
+    margin: 5px;
+}

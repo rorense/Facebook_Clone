@@ -15,7 +15,7 @@ function Post() {
     }
 
   return (
-    <div className='Post'>
+    <div className='post'>
         <div className='post__top'>
             <Avatar src="" />
             <form>
@@ -26,7 +26,7 @@ function Post() {
                 </button>
             </form>
         </div>
-
+        {/* The bottom half the posting component */}
         <div className='post__bottom'>
             <div className='post__option'>
                 <VideocamIcon style={{ color: "red" }}/>
