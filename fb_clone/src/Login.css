@@ -1,0 +1,32 @@
+/* Target the whole component */
+.login {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+/* Target image */
+.login__logo > img {
+    object-fit: contain;
+    height: 150px;
+} 
+
+/* Target all image */
+.login__logo {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Targetting the sign in button */
+.login > button {
+    width: 300px;
+    background-color: #2e81f4;
+    color: #eff2f5;
+    font-weight: 800;
+}
+
+/* Adding hover effect to button */
+.login > button:hover {
+    background-color: white;
+    color: #2e81f4;
+}
