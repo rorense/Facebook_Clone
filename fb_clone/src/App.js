@@ -5,6 +5,7 @@ import Sidebar from './Sidebar';
 import Feed from './Feed';
 import Widgets from './Widgets';
 
+// The main app component
 function App() {
   return (
     <div className="app">
