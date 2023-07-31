@@ -11,6 +11,8 @@ function App() {
   const user = null;
 
   return (
+    // Wrapping everyting in a data layer using React Context API
+    
     <div className="app">
       {!user ? (
         <Login />
