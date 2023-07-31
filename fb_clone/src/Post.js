@@ -6,7 +6,8 @@ import VideocamIcon from '@mui/icons-material/Videocam';
 import PhotoLibraryIcon from '@mui/icons-material/PhotoLibrary';
 import InsertEmoticonIcon from '@mui/icons-material/InsertEmoticon';
 import { useStateValue } from './StateProvider';
-
+import db from "./firebase";
+import firebase from 'firebase/compat/app';
 
 function Post() {
     // Import the user info
@@ -20,7 +21,14 @@ function Post() {
         // Prevents refreshing
         e.preventDefault();
 
-        // Implement database
+        // Implement database adding on posts
+        db.collection("posts").add({
+            message: input,
+            timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+            profilePic: user.photoURL,
+            username: user.displayName,
+            image: imageUrl
+        })
 
         // Clears the field when user submits.
         setInput("");
