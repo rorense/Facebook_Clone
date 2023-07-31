@@ -6,10 +6,17 @@ https://facebook-clone-1114b.web.app
 This is a facebook clone project using React.
 Tech Stack used:
 
-- React for front end
-- CSS
-- Firebase for back end
-- Firebase Authentication
+- React + React Hooks
+- React context API
+- CSS & Material UI
+- Flexbox
+- Firestone realtime Database
+- Firebase Google Authentication
+- Firebase Hosting
 
 
-Run "npm run build" everytime there is an update to code
+Note to self
+
+- To Update the code:
+1. "npm run build"
+2. "firebase deploy"
