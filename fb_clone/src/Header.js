@@ -13,9 +13,13 @@ import ForumIcon from '@mui/icons-material/Forum';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import { Avatar, IconButton } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import { useStateValue } from './StateProvider';
 
 // Header_ component focuses on the top part of the web app and is split into 3 different sections.
 function Header() {
+    // Pulling user information
+    const [{ user }, dispatch] = useStateValue();
+
   return (
     <div className='header'>
 
@@ -50,8 +54,8 @@ function Header() {
 
         <div className='header__right'>
             <div className='header__info'>
-                <Avatar src="https://scontent.fakl2-1.fna.fbcdn.net/v/t1.6435-9/74615519_2729679913717289_746247698641846272_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=s8aK4GGi4gIAX-F7tyF&_nc_ht=scontent.fakl2-1.fna&oh=00_AfAYK1GF_iGTGlhZBKHTM4AOGIAK7B3TUqAT5xiwDs8o8w&oe=64E81357" />
-                <h4>Ryan Orense</h4>
+                <Avatar src={ user.photoURL } />
+                <h4>{ user.displayName }</h4>
             </div>
             {/* Using Icon button for clickable elements */}
             <IconButton>

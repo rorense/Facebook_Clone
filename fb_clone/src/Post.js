@@ -5,9 +5,12 @@ import { Avatar } from '@mui/material';
 import VideocamIcon from '@mui/icons-material/Videocam';
 import PhotoLibraryIcon from '@mui/icons-material/PhotoLibrary';
 import InsertEmoticonIcon from '@mui/icons-material/InsertEmoticon';
+import { useStateValue } from './StateProvider';
 
 
 function Post() {
+    // Import the user info
+    const [{ user }, dispatch] = useStateValue();
 
     // State hooks for input on the post input
     const [input, setInput] = useState("");
@@ -27,13 +30,13 @@ function Post() {
   return (
     <div className='post'>
         <div className='post__top'>
-            <Avatar src="" />
+            <Avatar src={ user.photoURL } />
             <form>
                 <input 
                 // adding state hook
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
-                className="post__input" placeholder="What's on your mind?"/>
+                className="post__input" placeholder={`What's on your mind, ${user.displayName}?`}/>
                 <input 
                 // adding state hook
                 value={imageUrl}
