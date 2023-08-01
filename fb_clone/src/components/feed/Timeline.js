@@ -1,5 +1,5 @@
 import React from 'react';
-import './Timeline.css';
+import '../../assets/Timeline.css';
 import { Avatar } from '@mui/material';
 // Importing icons from Material UI
 import ThumbUpIcon from '@mui/icons-material/ThumbUp';

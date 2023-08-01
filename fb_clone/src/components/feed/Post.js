@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import "./Post.css";
+import "../../assets/Post.css";
 import { Avatar } from '@mui/material';
 // Importing Icons from Material UI
 import VideocamIcon from '@mui/icons-material/Videocam';
 import PhotoLibraryIcon from '@mui/icons-material/PhotoLibrary';
 import InsertEmoticonIcon from '@mui/icons-material/InsertEmoticon';
-import { useStateValue } from './StateProvider';
-import db from "./firebase";
+import { useStateValue } from '../../context_api/StateProvider';
+import db from "../../firebase/firebase";
 import firebase from 'firebase/compat/app';
 
 function Post() {

@@ -1,9 +1,9 @@
 import React from 'react';
-import "./Login.css";
+import "../../assets/Login.css";
 import { Button } from '@mui/material';
-import { auth, provider } from "./firebase";
-import { useStateValue } from './StateProvider';
-import { actionTypes } from './Reducer';
+import { auth, provider } from "../../firebase/firebase";
+import { useStateValue } from '../../context_api/StateProvider';
+import { actionTypes } from '../../context_api/Reducer';
 
 function Login() {
 

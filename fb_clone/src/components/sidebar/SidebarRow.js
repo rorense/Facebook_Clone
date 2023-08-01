@@ -1,6 +1,6 @@
 // "rfce" for template
 import React from 'react'
-import './SidebarRow.css';
+import '../../assets/SidebarRow.css';
 import { Avatar } from '@mui/material';
 
 // Prop elements lets you pass on variables to components

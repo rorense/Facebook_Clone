@@ -1,5 +1,4 @@
 import React from 'react';
-import "./Widgets.css";
 
 // Widget is basically and "I-frame", a snippet of a webpage.
 function Widgets() {

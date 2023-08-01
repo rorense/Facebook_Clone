@@ -1,6 +1,6 @@
 // Type 'rfce' for react template
 import React from 'react';
-import './Header.css';
+import '../../assets/Header.css';
 // Importing required components from Material UI
 import SearchIcon from '@mui/icons-material/Search';
 import HomeIcon from '@mui/icons-material/Home';
@@ -13,7 +13,7 @@ import ForumIcon from '@mui/icons-material/Forum';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import { Avatar, IconButton } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { useStateValue } from './StateProvider';
+import { useStateValue } from '../../context_api/StateProvider';
 
 // Header_ component focuses on the top part of the web app and is split into 3 different sections.
 function Header() {

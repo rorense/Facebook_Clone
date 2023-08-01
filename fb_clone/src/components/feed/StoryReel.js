@@ -1,5 +1,5 @@
 import React from 'react'
-import "./StoryReel.css"
+import "../../assets/StoryReel.css"
 import Story from './Story'
 
 // The top part of the webpage, the story reel section.

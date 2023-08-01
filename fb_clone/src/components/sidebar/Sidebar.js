@@ -1,7 +1,7 @@
 // "rfce" for template
 import React from 'react';
 import SidebarRow from './SidebarRow';
-import './Sidebar.css';
+import '../../assets/Sidebar.css';
 // Importing icons from Material UI
 import EmojiFlagsIcon from '@mui/icons-material/EmojiFlags';
 import PeopleIcon from '@mui/icons-material/People';
@@ -10,7 +10,7 @@ import StorefrontIcon from '@mui/icons-material/Storefront';
 import VideoLibraryIcon from '@mui/icons-material/VideoLibrary';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import LocalHospitalIcon from '@mui/icons-material/LocalHospital';
-import { useStateValue } from './StateProvider';
+import { useStateValue } from '../../context_api/StateProvider';
 
 // Sidebar component
 function Sidebar() {

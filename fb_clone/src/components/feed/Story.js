@@ -1,5 +1,5 @@
 import React from 'react';
-import "./Story.css";
+import "../../assets/Story.css";
 import { Avatar } from '@mui/material';
 
 // Each individual storyreel element with 3 props passed in.
