@@ -1,5 +1,7 @@
 # Facebook_Clone
 
+A simple facebook clone that allows user's to upload posts!
+
 Please click on this link:
 
 https://facebook-clone-1114b.web.app
