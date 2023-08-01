@@ -47,10 +47,6 @@ function Timeline({ profilePic, image, username, timestamp, message}) {
                 <p>Share</p>
             </div>
             <div className='timeline__option'>
-                <ThumbUpIcon />
-                <p>Like</p>
-            </div>
-            <div className='timeline__option'>
                 <AccountCircleIcon />
                 <ExpandMoreIcon />
             </div>
