@@ -5,12 +5,12 @@ import 'firebase/compat/auth'
 
 // File for storing Firebase codebase SDK key.
 const firebaseConfig = {
-    apiKey: "AIzaSyCk-TKCmg-H4vlpy2iQdi9USenphR96Mco",
-    authDomain: "facebook-clone-1114b.firebaseapp.com",
-    projectId: "facebook-clone-1114b",
-    storageBucket: "facebook-clone-1114b.appspot.com",
-    messagingSenderId: "353996477800",
-    appId: "1:353996477800:web:63ce4259a93dee1180f2dd"
+    apiKey: "AIzaSyCWuRouttUCoF992pHmsGk57ndwc8p4FSE",
+    authDomain: "fb-clone-bedaf.firebaseapp.com",
+    projectId: "fb-clone-bedaf",
+    storageBucket: "fb-clone-bedaf.appspot.com",
+    messagingSenderId: "580321644779",
+    appId: "1:580321644779:web:331b109fb13d963f7eeeae"
   };
 
   // Connecting firebase to the React front end
