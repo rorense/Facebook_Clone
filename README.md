@@ -4,7 +4,7 @@ A simple facebook clone that allows user's to upload posts!
 
 Please click on this link:
 
-https://facebook-clone-1114b.web.app
+https://fb-clone-bedaf.web.app/
 
 This is a facebook clone project using React.
 
