@@ -25,8 +25,8 @@ function Login() {
   return (
     <div className='login'>
         <div className='login__logo'>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/640px-2021_Facebook_icon.svg.png" alt=""/>
-            <img src="https://www.logo.wine/a/logo/Facebook/Facebook-Logo.wine.svg" alt=""/>
+            <img src="https://img.icons8.com/?size=512&id=66755&format=png" alt=""/>
+            <span>R Book</span>
         </div>
         <Button type="submit" onClick={signIn}>
             Sign In

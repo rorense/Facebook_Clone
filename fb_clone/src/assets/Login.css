@@ -20,7 +20,7 @@
 /* Targetting the sign in button */
 .login > button {
     width: 300px;
-    background-color: #2e81f4;
+    background-color: gray;
     color: #eff2f5;
     font-weight: 800;
 }
@@ -28,5 +28,13 @@
 /* Adding hover effect to button */
 .login > button:hover {
     background-color: white;
-    color: #2e81f4;
+    color: gray;
+}
+
+.login__logo > span {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: 800;
+    margin-top: 30px;
 }
