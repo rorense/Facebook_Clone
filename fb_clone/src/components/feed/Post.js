@@ -22,7 +22,7 @@ function Post() {
         e.preventDefault();
 
         // Implement database adding on posts
-        db.collection("posts").add({
+        db.collection("post").add({
             message: input,
             timestamp: firebase.firestore.FieldValue.serverTimestamp(),
             profilePic: user.photoURL,

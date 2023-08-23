@@ -11,7 +11,7 @@ function Feed() {
   // Connecting to the database
   useEffect(() => {
     // Always looking for a change and re-renders accordingly
-    db.collection('posts').orderBy('timestamp', "desc").onSnapshot(snapshot => (
+    db.collection('post').orderBy('timestamp', "desc").onSnapshot(snapshot => (
       setPosts(snapshot.docs.map(doc => ({ 
         id: doc.id, 
         data:doc.data( )})))

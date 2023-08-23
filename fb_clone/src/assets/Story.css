@@ -21,7 +21,7 @@
 /* Adding CSS to the avatar */
 .story__avatar {
     margin: 10px;
-    border: 5px solid #2e81f4;
+    border: 5px solid grey;
 }
 
 /* Adding CSS to the text element within the story */

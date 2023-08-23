@@ -25,7 +25,7 @@ function Header() {
 
         {/* The header_ left component includes the facebook logo and the searchbar */}
         <div className='header__left'>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/2021_Facebook_icon.svg" alt=""/>
+            <img src="https://img.icons8.com/?size=512&id=7743&format=png" alt=""/>
             <div className='header__input'>
                 <SearchIcon />
                 <input type='text' placeholder='Search Facebook'/>
